@@ -18,6 +18,8 @@ percentage1 = Percentage.new(phase, weight, pcnt)
 
   if phase == 1
     wo_protein = 0.8 * percentage1.lbm_number.to_f
+    wo_calories = percentage1.maint_calories.to_i - 300
+    nwo_calories = percentage1.maint_calories.to_i - 500
     nwo_protein = 0.7 * percentage1.lbm_number.to_f
     nwo_base = nwo_calories.to_i - (nwo_protein.to_i * 4)
     wo_base = wo_calories.to_i - (wo_protein.to_i * 4) 
@@ -25,12 +27,15 @@ percentage1 = Percentage.new(phase, weight, pcnt)
     wk3_carb = 75
     wk4_carb_wo = 100
     wk4_carb_nwo = 50
-    wo_calories = percentage1.maint_calories.to_i - 300
-    nwo_calories = percentage1.maint_calories.to_i - 500
     wo_fat3 = (wo_base.to_i - (wk3_carb.to_i * 4))/9
     wo_fat4 = (wo_base.to_i - (wk4_carb_wo.to_i * 4))/9
     nwo_fat4 = (wo_base.to_i - (wk4_carb_nwo.to_i * 4))/9
     nwo_fat14 = (nwo_base.to_i)/9
+    puts "\nCalories on Workout days are #{wo_calories}. Protein on workout days are #{wo_protein} grams. 
+    Carbs on workout days are #{wk3_carb} grams. Fat on workout days are #{wo_fat3} grams. 
+    
+    Calories on non workout days are #{nwo_calories}. Protein on non workout days are #{nwo_protein} grams. 
+    Carbs on non workout days are #{wk4_carb_nwo} grams. Fat on non workout days are #{nwo_fat14}."
   elsif phase == 2 
     wo_calories = percentage1.maint_calories.to_i - 200
     nwo_calories = percentage1.maint_calories.to_i - 600
