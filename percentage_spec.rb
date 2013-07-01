@@ -1,3 +1,4 @@
+require 'rspec'
 require_relative 'percentage'
 
 describe Percentage do
@@ -19,8 +20,16 @@ describe Percentage do
       @percentage.pcnt.should == 28
     end
     
-    it "has a rate"
+    it "has an lbm rate" do
+      @percentage.lbm_rate.should ==  13
+    end
     
-    it "has a lean body mass number"
+    it "has a lean body mass number" do
+      @percentage.lbm_number.should == 234.0
+    end
+    
+    it "has maint calories" do
+      @percentage.maint_calories.should == 3042.0
+    end
 
   end
