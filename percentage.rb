@@ -22,7 +22,7 @@ class Percentage
     if pcnt < 12
       lbm_rate = 17
     elsif pcnt < 15
-      lbm_rate = 26
+      lbm_rate = 16
     elsif pcnt < 19
       lbm_rate = 15
     elsif pcnt < 22
