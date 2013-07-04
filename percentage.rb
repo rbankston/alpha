@@ -5,12 +5,7 @@ class Percentage
   attr_accessor :phase
   attr_accessor :pcnt
   attr_accessor :weight
-  attr_reader :wo_calories
-  attr_reader :wo_protein
-  attr_reader :nwo_protein
-  attr_reader :nwo_calories
-  attr_reader :nwo_fat
-  attr_reader :wo_fat
+
     
   def initialize(phase, weight, pcnt)
     @phase = phase
