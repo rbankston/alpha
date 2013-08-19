@@ -40,7 +40,7 @@ class Percentage
     puts "\nCalories on Workout days are #{@wo_calories}. Protein on workout days are #{@wo_protein} grams. 
     Carbs on workout days are #{@wo_carbs} grams. Fat on workout days are #{@wo_fat} grams. 
     
-    Calories on non workout days are #{@nwo_calories}. Protein on non workout days are #{nwo_protein} grams. 
+    Calories on non workout days are #{@nwo_calories}. Protein on non workout days are #{@nwo_protein} grams. 
     Carbs on non workout days are #{@nwo_carbs} grams. Fat on non workout days are #{@nwo_fat}."
   end
   

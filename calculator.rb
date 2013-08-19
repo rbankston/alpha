@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
 # Ruby Diet Calculator for 3 phases of Engineering the Alpha
-require_relative 'percentage'
+require_relative 'lib/percentage'
 
 
 #first option is what phase of the program you are in
