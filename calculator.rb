@@ -5,7 +5,8 @@ require_relative 'lib/percentage'
 
 
 #first option is what phase of the program you are in
-print "What phase of Engineering the Alpha are you in: (Please enter 1 2 3 4): "
+puts "Pleaes enter 1 if your goal is resetting hormones.\n2 if you're cutting weight.\n3 to add mass or 4 to maintain."
+print "What would you like to do?: (Please enter 1 2 3 4): "
 phase = gets.to_i
 
 print "What is your current body weight? (Please only the weight in pounds): "

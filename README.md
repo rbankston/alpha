@@ -1,6 +1,6 @@
-alpha
+NutriCalc
 =====
 
-Ruby program to figure out the diet for engineering the alpha
+Ruby program to figure out some nutritional information based on goals
 
-Run ./caluclator.rb from the command line and follow the prompts to see the alpha diet guidelines.
+Run nutricalc from the command line with ./calculator.rb or ruby calculator.rb and follow the prompts to see the alpha diet guidelines.
