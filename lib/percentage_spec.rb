@@ -9,27 +9,27 @@ describe Percentage do
     end
     
     it "has an initial weight" do
-      @percentage.weight.should == 325
+      expect(@percentage.weight).to eq(325)
     end
     
     it "has an initial phase" do
-      @percentage.phase.should == 1
+      expect(@percentage.phase).to eq(1)
     end
     
     it "has an initial percent" do
-      @percentage.pcnt.should == 28
+      expect(@percentage.pcnt).to eq(28)
     end
     
     it "has an lbm rate" do
-      @percentage.lbm_rate.should ==  13
+      expect(@percentage.lbm_rate).to eq(13)
     end
     
     it "has a lean body mass number" do
-      @percentage.lbm_number.should == 234.0
+      expect(@percentage.lbm_number).to eq(234.0)
     end
     
     it "has maint calories" do
-      @percentage.maint_calories.should == 3042.0
+      expect(@percentage.maint_calories).to eq(3042.0)
     end
 
   end
